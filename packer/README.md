@@ -15,3 +15,7 @@
     - passwd
 4. `packer validate -var-file='credentials.pkr.hcl' ubuntu-server-noble/ubuntu-server-noble.pkr.hcl`
 5. `packer build -var-file='credentials.pkr.hcl' ubuntu-server-noble/ubuntu-server-noble.pkr.hcl`
+
+
+# Notes
+- https://github.com/ChristianLempa/boilerplates/blob/main/packer/proxmox/ubuntu-server-noble/ubuntu-server-noble.pkr.hcl
