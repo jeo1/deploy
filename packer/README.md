@@ -1,4 +1,5 @@
 # Run guide
+## ubuntu-server-noble
 1. `cd packer`
 2. Run `packer init config.pkr.hcl`
 3. Update `credentials.pkr.hcl`
@@ -9,10 +10,12 @@
     - template_description
     - iso_file
     - ssh_username
-    - ssh_password
+    - ssh_private_key_file
+
 5. Update following in 
     - name
-    - passwd
+    - ssh_authorized_keys
+    
 4. `packer validate -var-file='credentials.pkr.hcl' ubuntu-server-noble/ubuntu-server-noble.pkr.hcl`
 5. `packer build -var-file='credentials.pkr.hcl' ubuntu-server-noble/ubuntu-server-noble.pkr.hcl`
 
