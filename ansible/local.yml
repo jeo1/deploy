@@ -8,3 +8,8 @@
   become: true
   roles:
     - packer
+
+- hosts: terrafrom
+  become: true
+  roles:
+    - terrafrom
