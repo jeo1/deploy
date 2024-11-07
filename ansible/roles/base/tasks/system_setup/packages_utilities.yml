@@ -1,0 +1,16 @@
+- name: Install utility packages on (Ubuntu, Debian)
+  package:
+    state: latest
+    name:
+      - curl
+      - wget
+      - nfs-common
+      - git
+      - nano
+      - gnupg
+      - ca-certificates
+      - tmux
+      - htop
+      - cron
+      - cloud-utils
+  when: ansible_distribution in ["Debian", "Ubuntu"]

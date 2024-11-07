@@ -1,0 +1,10 @@
+---
+- hosts: all, local
+  become: true
+  roles:
+    - role: base
+
+- hosts: packer
+  become: true
+  roles:
+    - packer
