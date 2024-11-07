@@ -27,14 +27,14 @@ source "proxmox-iso" "ubuntu-server-noble" {
     insecure_skip_tls_verify = true
     
     # VM General Settings
-    node = "your-proxmox-node"
-    vm_id = "100"
-    vm_name = "ubuntu-server-noble"
-    template_description = "Ubuntu Server Noble Image"
+    node = "proxmox" #update
+    vm_id = "8000" #update
+    vm_name = "Ubuntu-24.04-Template" #update
+    template_description = "Ubuntu Server Noble Image" #update
 
     # VM OS Settings
     # (Option 1) Local ISO File
-    iso_file = "local:iso/ubuntu-24.04.1-live-server-amd64.iso"
+    iso_file = "local:iso/ubuntu-24.04.1-live-server-amd64.iso" #update/check
     # - or -
     # (Option 2) Download ISO
     # iso_url = "https://releases.ubuntu.com/24.04/ubuntu-24.04-live-server-amd64.iso"
@@ -88,7 +88,7 @@ source "proxmox-iso" "ubuntu-server-noble" {
     communicator            = "ssh"
 
     # PACKER Autoinstall Settings
-    http_directory          = "http" 
+    http_directory          = "ubuntu-server-noble/http" 
     # (Optional) Bind IP Address and Port
     # http_bind_address       = "0.0.0.0"
     # http_port_min           = 8802
@@ -131,7 +131,7 @@ build {
 
     # Provisioning the VM Template for Cloud-Init Integration in Proxmox #2
     provisioner "file" {
-        source = "files/99-pve.cfg"
+        source = "ubuntu-server-noble/files/99-pve.cfg"
         destination = "/tmp/99-pve.cfg"
     }
 
