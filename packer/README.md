@@ -24,3 +24,5 @@
 - https://github.com/ChristianLempa/boilerplates/blob/main/packer/proxmox/ubuntu-server-noble/ubuntu-server-noble.pkr.hcl
 - https://github.com/bobfraser1/packer-alpine 
     - passwords
+- https://github.com/dustinrue/proxmox-packer/tree/main
+- https://github.com/jbowdre/packer-proxmox-templates/
