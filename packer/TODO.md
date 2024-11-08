@@ -2,6 +2,8 @@
 
 # Testing
 - ubuntu-server-noble
+    - able to create the template, unable to access it
+    - think the issue has to do with the network setup
 
 # Untested
 
