@@ -27,4 +27,6 @@
 - https://github.com/dustinrue/proxmox-packer/tree/main
 - https://github.com/jbowdre/packer-proxmox-templates/
 - https://developer.hashicorp.com/packer/guides/hcl/variables
-    - covers passwords  
+    - covers passwords
+- https://github.com/LKummer/packer-alpine/tree/master
+    - alpine proxmox packer
